@@ -43,6 +43,7 @@ public class PhoneEditText extends EditText implements TextWatcher {
 	}
 
 	protected void init() {
+		setInputType(InputType.TYPE_CLASS_PHONE);
 		_mask = "+7 (###) ###-##-##";
 		_regexp = "\\D+";
 		_replace = "#";
